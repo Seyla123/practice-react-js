@@ -1,5 +1,4 @@
 import './App.css'
-import { Button, CssBaseline,TextField } from '@mui/material'
 import useCount from './hooks/use-count'
 import WindowResizeTracker from './components/WindowResizeTracker'
 import TimerComponent from './components/TimerComponent'
@@ -8,6 +7,12 @@ import { MyProvider } from './contexts/MyContext';
 import { useState, useCallback, useReducer } from 'react'
 import ChildComponent from './components/ChildComponent'
 import reducer from './hooks/useCounterReducer'
+import { Button,
+  CssBaseline,
+  TextField,
+  AppBar,
+  Toolbar,
+  Typography } from '@mui/material'
 
 
 function App() {
@@ -43,6 +48,13 @@ function App() {
   return (
     <>
       <CssBaseline />
+      <AppBar position='relative' >
+        <Toolbar>
+        <Typography variant='h6' noWrap>
+          Advanced Material UI Styling
+        </Typography>
+        </Toolbar>
+      </AppBar>
       <MyProvider>
         <MyComponent></MyComponent>
         <TimerComponent></TimerComponent>
