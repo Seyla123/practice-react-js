@@ -1,4 +1,5 @@
 import './App.css'
+import './stores'
 import useCount from './hooks/use-count'
 import WindowResizeTracker from './components/WindowResizeTracker'
 import TimerComponent from './components/TimerComponent'
